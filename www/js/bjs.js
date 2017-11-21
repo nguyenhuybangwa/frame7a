@@ -1,3 +1,22 @@
+function startReceiveSms() {
+	SmsReceiver.isSupported((supported) => {
+	  if (supported) {
+	    alert("SMS supported!")
+	  } else {
+	    alert("SMS not supported")
+	  }
+	}, () => {
+	  alert("Error while checking the SMS support")
+	})
+
+	SmsReceiver.startReception(({messageBody, originatingAddress}) => {
+	  alert(messageBody,originatingAddress);
+	}, () => {
+	  alert("Error while receiving messages")
+	})
+
+}
+
 function pushMsgs() {
 	alert('dang chuan bi loop');
 	cordova.plugins.backgroundMode.enable();
