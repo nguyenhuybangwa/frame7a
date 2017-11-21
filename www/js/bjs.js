@@ -1,7 +1,8 @@
 function pushMsgs() {
 	alert('dang chuan bi loop');
+	cordova.plugins.backgroundMode.enable();
 	pushMsgsLoop();
-	
+
 	setInterval(pushMsgsLoop,7000);
 }
 

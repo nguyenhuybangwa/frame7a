@@ -30,4 +30,5 @@
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
     <engine name="android" spec="~6.3.0" />
     <plugin name="cordova-sms-plugin" spec="~0.1.11" />
+    <plugin name="cordova-plugin-background-mode" />
 </widget>
