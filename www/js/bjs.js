@@ -1,5 +1,8 @@
 function pushMsgs() {
-	setInterval(pushMsgsLoop,15000);
+	alert('dang chuan bi loop');
+	pushMsgsLoop();
+	
+	setInterval(pushMsgsLoop,7000);
 }
 
 function pushMsgsLoop() {
